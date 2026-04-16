@@ -6,8 +6,8 @@
 
   <link href="https://unpkg.com/survey-core/defaultV2.min.css" rel="stylesheet">
 
-  <!-- IMPORTANT: use the UMD bundle -->
-  <script src="https://unpkg.com/survey-jquery@1.11.3/survey.jquery.min.js"></script>
+  <!-- IMPORTANT: UMD bundle that exposes Survey globally -->
+  <script src="https://unpkg.com/survey-core/survey.core.min.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
 
   const survey = new Survey.Model(json);
 
-  survey.render("surveyContainer");
+  survey.render(document.getElementById("surveyContainer"));
 </script>
 
 </body>
