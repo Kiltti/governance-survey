@@ -1483,7 +1483,7 @@ surveyJSON.pages.forEach(page => {
   page.elements.forEach(el => {
 
     // Section text
-    if (el.type === "html") {
+    if (el.type === "html" && el.html) {
       survey.push({
         type: "section",
         title: "",
