@@ -2,28 +2,17 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Test Survey</title>
-
-  <link href="https://unpkg.com/survey-core/defaultV2.min.css" rel="stylesheet">
-
-  <!-- IMPORTANT: UMD bundle that exposes Survey globally -->
-  <script src="https://unpkg.com/survey-core/survey.core.min.js"></script>
+  <title>Test</title>
 </head>
 
 <body>
 
-<div id="surveyContainer"></div>
+<h1>Hello — this should appear</h1>
+
+<div id="test"></div>
 
 <script>
-  const json = {
-    elements: [
-      { type: "text", name: "name", title: "Your name:" }
-    ]
-  };
-
-  const survey = new Survey.Model(json);
-
-  survey.render(document.getElementById("surveyContainer"));
+  document.getElementById("test").innerHTML = "JavaScript is working";
 </script>
 
 </body>
