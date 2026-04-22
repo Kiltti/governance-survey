@@ -1,0 +1,1460 @@
+{
+  "title": "Charity Governance Diagnostic Tool",
+  "completedHtml": "<p>Thank you for taking the time to reflect. Your personalised governance report is being prepared and will be emailed to you shortly.</p>",
+  "pages": [
+    {
+      "name": "intro",
+      "elements": [
+        {
+          "type": "html",
+          "name": "intro_text",
+          "html": "<h2>Charity Governance Diagnostic Tool</h2><p>This is a supportive, non‑judgemental tool to help you think about how governance is working in your charity.</p><p>Respond honestly with what feels true for you.</p><p>For each statement, select 1 star for 'Not at all true', all the way up to 5 stars for 'Fully true'.</p>"
+        },
+        {
+          "type": "html",
+          "name": "question6"
+        }
+      ]
+    },
+    {
+      "name": "contact_page",
+      "elements": [
+        {
+          "type": "text",
+          "name": "name",
+          "title": "Your name (optional)"
+        },
+        {
+          "type": "text",
+          "name": "email",
+          "title": "Your email address",
+          "isRequired": true,
+          "inputType": "email"
+        },
+        {
+          "type": "text",
+          "name": "charity",
+          "title": "Charity name (optional)"
+        }
+      ]
+    },
+    {
+      "name": "s1_intro",
+      "elements": [
+        {
+          "type": "html",
+          "name": "s1_text",
+          "html": "<h3>Purpose & Strategy</h3><p>This section gives you space to reflect honestly on how clearly your charity’s purpose and direction are understood in practice.</p>"
+        }
+      ]
+    },
+    {
+      "name": "q1_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q1",
+          "title": "Our charity’s purpose feels clear and well‑understood across the organisation.",
+          "rateType": "stars"
+        }
+      ]
+    },
+    {
+      "name": "q2_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q2",
+          "title": "We have a shared sense of the difference we aim to make and who we exist to serve.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q3_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q3",
+          "title": "Our strategic priorities feel realistic, relevant and grounded in our purpose.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q4_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q4",
+          "title": "Trustees and staff have a common understanding of what success looks like.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q5_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q5",
+          "title": "We regularly reflect on whether our activities still align with our purpose.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q6_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q6",
+          "title": "We make decisions with a clear sense of the impact we want to achieve.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q7_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q7",
+          "title": "We understand the needs of the people or communities we serve.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q8_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q8",
+          "title": "We adapt our plans when circumstances change, while staying true to our purpose.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q9_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q9",
+          "title": "We think long-term and use evidence, insight and feedback to shape our strategic direction.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q10_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q10",
+          "title": "Trustees feel confident that the charity is moving in a purposeful, coherent direction.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "s2_intro",
+      "elements": [
+        {
+          "type": "html",
+          "name": "s2_text",
+          "html": "<h3>Financial Health & Resilience</h3><p>These questions help you consider how confidently you feel about your charity’s financial position and future stability.</p>"
+        }
+      ]
+    },
+    {
+      "name": "q11_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q11",
+          "title": "We receive clear financial reports that give us a clear picture of our financial position and what it means for our work.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q12_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q12",
+          "title": "Our income feels stable enough to support our plans and commitments.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q13_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q13",
+          "title": "We understand the financial risks we face and how to manage them.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q14_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q14",
+          "title": "Trustees feel confident reading and interpreting financial information.\n",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q15_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q15",
+          "title": "We plan ahead to ensure long‑term financial sustainability.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page1",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "question1",
+          "title": "We use our funds responsibly and in line with our charitable purpose.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page2",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "question2",
+          "title": "We have appropriate reserves or contingency plans for unexpected challenges.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page3",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "question3",
+          "title": "We monitor income and expenditure regularly and respond to changes promptly.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page4",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "question4",
+          "title": "We explore opportunities to diversify or strengthen our income where needed.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page5",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "question5",
+          "title": "Financial decisions feel transparent, well‑explained and aligned with our values.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "s3_intro",
+      "elements": [
+        {
+          "type": "html",
+          "name": "s3_text",
+          "html": "<h3>Governance & Trustee Duties</h3><p>Here you can reflect on how well your board’s responsibilities are understood and how effectively trustees work together.</p>"
+        }
+      ]
+    },
+    {
+      "name": "q21_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q21",
+          "title": "Trustees understand their responsibilities and feel confident in their role.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q22_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q22",
+          "title": "Our board works well together and supports constructive, respectful discussion.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q23_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q23",
+          "title": "We have the skills and experience we need to govern effectively.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q24_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q24",
+          "title": "We make decisions in a clear, transparent and well‑informed way.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q25_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q25",
+          "title": "We review our governance arrangements and adapt them when needed.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q26_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q26",
+          "title": "Trustees feel able to ask questions, seek clarification and challenge appropriately.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q27_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q27",
+          "title": "We have clear boundaries between governance and day‑to‑day management.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q28_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q28",
+          "title": "New trustees are welcomed and supported to contribute confidently.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q29_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q29",
+          "title": "We reflect on our performance as a board and look for ways to improve.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q30_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q30",
+          "title": "Our governance practices feel proportionate, practical and rooted in our purpose.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "s4_intro",
+      "elements": [
+        {
+          "type": "html",
+          "name": "s4_text",
+          "html": "<h3>Risk, Controls & Compliance</h3><p>This section supports you to think about how risks are identified and managed, and how confidently you feel about compliance.</p>"
+        }
+      ]
+    },
+    {
+      "name": "q31_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q31",
+          "title": "We have a clear understanding of the key risks facing our charity.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q32_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q32",
+          "title": "We review risks regularly and take proportionate steps to manage them.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q33_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q33",
+          "title": "Our policies and procedures feel practical, up‑to‑date and understood in practice.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q34_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q34",
+          "title": "We are confident that we meet our legal and regulatory requirements.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q35_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q35",
+          "title": "Safeguarding is taken seriously and embedded across our work.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q36_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q36",
+          "title": "We respond promptly and openly when issues or concerns arise.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q37_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q37",
+          "title": "We have clear processes for reporting, recording and learning from incidents.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q38_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q38",
+          "title": "Trustees feel informed about compliance requirements relevant to our charity.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q39_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q39",
+          "title": "We are aware of reputational risks and how to manage them.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q40_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q40",
+          "title": "We feel confident overall about our compliance.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "s5_intro",
+      "elements": [
+        {
+          "type": "html",
+          "name": "s5_text",
+          "html": "<h3>People & Culture</h3><p>These questions invite you to reflect on how trustees work together, communicate, and create a constructive and supportive board environment.</p>"
+        }
+      ]
+    },
+    {
+      "name": "q41_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q41",
+          "title": "Our board culture is respectful and inclusive.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q42_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q42",
+          "title": "Trustees listen to each other carefully.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q43_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q43",
+          "title": "We work in a way that feels inclusive and welcoming to different perspectives.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q44_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q44",
+          "title": "We handle challenges or disagreements in a constructive, fair way.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q45_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q45",
+          "title": "We take staff and volunteer wellbeing seriously and act on concerns.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q46_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q46",
+          "title": "There is clarity between governance and operational roles.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q47_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q47",
+          "title": "Communication within the board is clear, open, kind and respectful.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q48_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q48",
+          "title": "Trustees feel able to speak openly and honestly.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q49_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q49",
+          "title": "All trustees are encouraged to contribute.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q50_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q50",
+          "title": "There is a strong sense of trust within the board.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "s6_intro",
+      "elements": [
+        {
+          "type": "html",
+          "name": "s6_text",
+          "html": "<h3>Operations & Resources</h3><p>This section helps you consider how well your charity’s resources, systems and day‑to‑day operations support its work.</p>"
+        }
+      ]
+    },
+    {
+      "name": "q51_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q51",
+          "title": "Our charity has the systems and processes it needs to deliver work reliably and safely.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q52_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q52",
+          "title": "We make good use of the resources we have (people, time, equipment, funding).",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q53_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q53",
+          "title": "Operational tasks are carried out consistently and to a good standard.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q54_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q54",
+          "title": "We have clear processes for planning, monitoring and improving our day‑to‑day work.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q55_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q55",
+          "title": "Staff and volunteers have the tools and information they need to do their roles well.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q56_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q56",
+          "title": "We manage our workload effectively and avoid unnecessary pressure or duplication.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q57_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q57",
+          "title": "We respond well when operational issues or challenges arise.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q58_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q58",
+          "title": "We regularly review whether our systems and processes are still fit for purpose.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q59_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q59",
+          "title": "We use data and feedback to improve how our services or activities run.\n",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q60_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q60",
+          "title": "Trustees have a good understanding of how operations work in practice.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "s7_intro",
+      "elements": [
+        {
+          "type": "html",
+          "name": "s7_text",
+          "html": "<h3>Transparency & Accountability</h3><p>Here you can reflect on how openly and clearly your charity communicates, reports and builds trust with the people it serves.</p>"
+        }
+      ]
+    },
+    {
+      "name": "q61_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q61",
+          "title": "We communicate clearly and openly about our work, decisions and impact.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q62_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q62",
+          "title": "Our reporting (financial and non‑financial) is accurate, timely and easy to understand.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q63_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q63",
+          "title": "We are transparent about how we use funds and the difference they make.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q64_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q64",
+          "title": "We listen to feedback from the people we serve and respond constructively.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q65_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q65",
+          "title": "We share information proactively with stakeholders, not only when asked.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q66_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q66",
+          "title": "Trustees understand their responsibilities for accountability and public trust.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q67_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q67",
+          "title": "We handle concerns or complaints in a fair, transparent and timely way.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q68_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q68",
+          "title": "We are open about risks, challenges and areas where improvement is needed.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q69_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q69",
+          "title": "We demonstrate our values through our behaviour, decisions and communication.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "q70_page",
+      "elements": [
+        {
+          "type": "rating",
+          "name": "q70",
+          "title": "People who interact with our charity feel informed, respected and able to raise questions.",
+          "rateType": "stars",
+          "autoGenerate": false,
+          "rateValues": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page7",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question7",
+          "html": "<h3>Your governance reflection score</h3><p>This is not a judgement — just a starting point for reflection.</p><h2>{percentageScore}%</h2>"
+        },
+        {
+          "type": "expression",
+          "name": "What this score indicates:",
+          "expression": "iif({percentageScore} >= 80, 'Your governance appears strong and well-balanced.', iif({percentageScore} >= 60, 'Your governance is generally sound, with some areas to strengthen.', iif({percentageScore} >= 40, 'There are areas where governance could be strengthened.', 'Governance may be under strain and would benefit from focused support.')))"
+        }
+      ]
+    }
+  ],
+  "calculatedValues": [
+    {
+      "name": "totalScore",
+      "expression": "sum({q1},{q2},{q3},{q4},{q5},{q6},{q7},{q8},{q9},{q10},{q11},{q12},{q13},{q14},{q15},{q16},{q17},{q18},{q19},{q20},{q21},{q22},{q23},{q24},{q25},{q26},{q27},{q28},{q29},{q30},{q31},{q32},{q33},{q34},{q35},{q36},{q37},{q38},{q39},{q40},{q41},{q42},{q43},{q44},{q45},{q46},{q47},{q48},{q49},{q50},{q51},{q52},{q53},{q54},{q55},{q56},{q57},{q58},{q59},{q60},{q61},{q62},{q63},{q64},{q65},{q66},{q67},{q68},{q69},{q70})"
+    },
+    {
+      "name": "percentageScore",
+      "expression": "round(({totalScore} / 350) * 100)"
+    }
+  ],
+  "showProgressBar": true
+}
