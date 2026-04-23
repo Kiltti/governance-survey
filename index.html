@@ -82,12 +82,13 @@
         });
 
         // Render the survey (correct Knockout UI method)
-        const root = document.getElementById("surveyContainer");
-        const surveyElement = document.createElement("div");
-        root.appendChild(surveyElement);
+const root = document.getElementById("surveyContainer");
+const surveyElement = document.createElement("div");
+root.appendChild(surveyElement);
 
-        Survey.StylesManager.applyTheme("defaultV2");
-survey.render("surveyContainer");
+Survey.StylesManager.applyTheme("defaultV2");
+survey.render(surveyElement);
+
       })
       .catch(err => {
         console.error("Error loading survey JSON", err);
