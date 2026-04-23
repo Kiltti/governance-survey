@@ -47,24 +47,20 @@
 
     // 2. Your Google Apps Script Web App URL (replace this with your real one)
     const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzr8geBce46vRi5KG1PaYWpMitSmboaXNVbeKFGPlmtxtcwbh5_J7O_Z0SchyEgZhDl/exec";
-
     // Load the survey JSON
     fetch(SURVEY_JSON_URL)
       .then(r => r.json())
       .then(json => {
         const survey = new Survey.Model(json);
 
-        // Optional: use the completionHtml you defined in SurveyJS
-        // If your JSON already has completionHtml, SurveyJS will show it automatically.
-        // We’ll also show an extra message once the server confirms.
-
+        // Handle completion
         survey.onComplete.add(function(sender) {
           const data = sender.data;
 
           // POST to Apps Script
           fetch(APPS_SCRIPT_URL, {
             method: "POST",
-            mode: "no-cors", // keeps it simple; Apps Script will still receive the data
+            mode: "no-cors",
             headers: {
               "Content-Type": "application/json"
             },
@@ -73,7 +69,7 @@
             console.error("Error sending to Apps Script", err);
           });
 
-          // Show a simple thank-you panel on the page
+          // Show thank-you message
           const thankyou = document.getElementById("thankyouContainer");
           thankyou.style.display = "block";
           thankyou.innerHTML = `
@@ -85,18 +81,16 @@
           `;
         });
 
+        // Render the survey (correct Knockout UI method)
         const root = document.getElementById("surveyContainer");
         const surveyElement = document.createElement("div");
         root.appendChild(surveyElement);
 
-        const surveyModel = survey;
-        const surveyUI = new SurveyUI.Survey(surveyModel);
-        surveyUI.render(surveyElement);
+        Survey.StylesManager.applyTheme("defaultV2");
+        survey.render(surveyElement);
       })
       .catch(err => {
         console.error("Error loading survey JSON", err);
       });
-  </script>
-</body>
-</html>
+
 
