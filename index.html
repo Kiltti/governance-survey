@@ -6,9 +6,9 @@
   <title>Charity Governance Health Check</title>
 
 <!-- SurveyJS styles and scripts -->
-<link href="https://unpkg.com/survey-core/survey.core.min.css" rel="stylesheet" />
+<link href="https://unpkg.com/survey-core/defaultV2.min.css" rel="stylesheet" />
 <script src="https://unpkg.com/knockout/build/output/knockout-latest.js"></script>
-<script src="https://unpkg.com/survey-knockout/survey.ko.min.js"></script>
+<script src="https://unpkg.com/survey-knockout/survey-knockout.min.js"></script>
 
   <style>
     body {
@@ -86,8 +86,8 @@
         const surveyElement = document.createElement("div");
         root.appendChild(surveyElement);
 
-        Survey.StylesManager.applyTheme("default");
-        survey.render(surveyElement);
+        Survey.StylesManager.applyTheme("defaultV2");
+survey.render("surveyContainer");
       })
       .catch(err => {
         console.error("Error loading survey JSON", err);
