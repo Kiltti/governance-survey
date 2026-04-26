@@ -1453,7 +1453,7 @@
   },
   {
     "name": "percentageScore",
-    "expression": "({totalScore} / 350) * 100"
+    "expression": "substr((({totalScore} / 350) * 100).toString(), 0, (({totalScore} / 350) * 100).toString().indexOf('.'))"
   }
 ]
 }
