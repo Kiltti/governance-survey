@@ -336,11 +336,11 @@
       ]
     },
     {
-      "name": "page1",
+      "name": "q16_page",
       "elements": [
         {
           "type": "rating",
-          "name": "question1",
+          "name": "q16",
           "title": "We use our funds responsibly and in line with our charitable purpose.",
           "rateType": "stars",
           "autoGenerate": false,
@@ -355,11 +355,11 @@
       ]
     },
     {
-      "name": "page2",
+      "name": "q17_page",
       "elements": [
         {
           "type": "rating",
-          "name": "question2",
+          "name": "q17",
           "title": "We have appropriate reserves or contingency plans for unexpected challenges.",
           "rateType": "stars",
           "autoGenerate": false,
@@ -374,11 +374,11 @@
       ]
     },
     {
-      "name": "page3",
+      "name": "q18_page",
       "elements": [
         {
           "type": "rating",
-          "name": "question3",
+          "name": "q18",
           "title": "We monitor income and expenditure regularly and respond to changes promptly.",
           "rateType": "stars",
           "autoGenerate": false,
@@ -393,11 +393,11 @@
       ]
     },
     {
-      "name": "page4",
+      "name": "q19_page",
       "elements": [
         {
           "type": "rating",
-          "name": "question4",
+          "name": "q19",
           "title": "We explore opportunities to diversify or strengthen our income where needed.",
           "rateType": "stars",
           "autoGenerate": false,
@@ -412,11 +412,11 @@
       ]
     },
     {
-      "name": "page5",
+      "name": "q20_page",
       "elements": [
         {
           "type": "rating",
-          "name": "question5",
+          "name": "q20",
           "title": "Financial decisions feel transparent, well‑explained and aligned with our values.",
           "rateType": "stars",
           "autoGenerate": false,
