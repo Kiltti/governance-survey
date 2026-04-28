@@ -94,7 +94,7 @@ const surveyElement = document.createElement("div");
 root.appendChild(surveyElement);
 
 Survey.StylesManager.applyTheme("defaultV2");
-survey.render(surveyElement);
+SurveyKnockout.render(surveyElement, survey);
 
       })
       .catch(err => {
