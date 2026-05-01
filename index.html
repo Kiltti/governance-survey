@@ -66,14 +66,15 @@
 
           // POST to Apps Script
           fetch(APPS_SCRIPT_URL, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-          }).catch(err => {
-            console.error("Error sending to Apps Script", err);
-          });
+  method: "POST",
+  mode: "no-cors",
+  headers: {
+    "Content-Type": "text/plain"
+  },
+  body: JSON.stringify(data)
+}).catch(err => {
+  console.error("Error sending to Apps Script", err);
+});
 
           // Show thank-you message
           const thankyou = document.getElementById("thankyouContainer");
