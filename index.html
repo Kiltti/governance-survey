@@ -34,11 +34,7 @@
       background: #f3f7ff;
       border: 1px solid #d0ddff;
     }
-     /* Hide intro content when embedded in Wix */
-    body.embedded h1,
-    body.embedded p {
-      display: none;
-    }
+     
   </style>
 </head>
 <body>
@@ -115,10 +111,7 @@ survey.render(surveyElement);
       .catch(err => {
         console.error("Error loading survey JSON", err);
       });
-    <script>
-    if (window.self !== window.top) {
-      document.body.classList.add("embedded");
-    }
+    
   </script>
 </body>
 </html>
