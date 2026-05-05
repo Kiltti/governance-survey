@@ -115,6 +115,11 @@ survey.render(surveyElement);
       });
     
   </script>
+  <script>
+    if (window.self !== window.top) {
+      document.getElementById("introContent").style.display = "none";
+    }
+  </script>
 </body>
 </html>
 
