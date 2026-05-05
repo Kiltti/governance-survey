@@ -1,13 +1,22 @@
-<!-- cache-bust 2 -->
+<!-- cache-bust 1 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Charity Governance Health Check</title>
-  <link href="https://unpkg.com/survey-core@1.12.61/defaultV2.min.css" rel="stylesheet" />
-  <script src="https://unpkg.com/knockout/build/output/knockout-latest.js"></script>
-  <script src="https://unpkg.com/survey-core@1.12.61/survey.core.min.js"></script>
-  <script src="https://unpkg.com/survey-knockout@1.12.61/survey.ko.min.js"></script>
+
+  <!-- SurveyJS DefaultV2 Theme -->
+<link href="https://unpkg.com/survey-core@1.12.61/defaultV2.min.css" rel="stylesheet" />
+
+<!-- Knockout -->
+<script src="https://unpkg.com/knockout/build/output/knockout-latest.js"></script>
+
+<!-- SurveyJS Core -->
+<script src="https://unpkg.com/survey-core@1.12.61/survey.core.min.js"></script>
+
+<!-- SurveyJS Knockout (includes UI renderer) -->
+<script src="https://unpkg.com/survey-knockout@1.12.61/survey.ko.min.js"></script>
+
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -25,50 +34,59 @@
       background: #f3f7ff;
       border: 1px solid #d0ddff;
     }
+     
   </style>
 </head>
 <body>
   <div id="introContent">
-    <h1>Charity Governance Health Check</h1>
-    <p>
-      This thorough governance health check is designed to give your board a clear, supportive snapshot
-      of how you're doing against key areas of good practice.
-    </p>
+  <h1>Charity Governance Health Check</h1>
+  <p>
+    This thorough governance health check is designed to give your board a clear, supportive snapshot
+    of how you're doing against key areas of good practice.
+  </p>
   </div>
+
   <div id="surveyContainer"></div>
   <div id="thankyouContainer" class="thankyou" style="display:none;"></div>
+
   <script>
+    // 1. Your SurveyJS JSON (exported from SurveyJS)
+    //    Either paste it inline here, or load from survey.json.
+    //    For now, we’ll assume you have a separate survey.json file.
     const SURVEY_JSON_URL = "survey-v3.json";
+
+    // 2. Your Google Apps Script Web App URL (replace this with your real one)
     const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzz7lO8r3o1U7KEYbWx0b34SApCrt1PseX7ptYjoUwCRqyMRtCsTkq3W1zRj4JvRktt/exec";
-
-    function updateParentHeight() {
-      const height = document.body.scrollHeight;
-      window.parent.postMessage({ type: "setHeight", height: height }, "*");
-    }
-
+    // Load the survey JSON
     fetch(SURVEY_JSON_URL)
       .then(r => r.json())
       .then(json => {
         const survey = new Survey.Model(json);
 
-        survey.onCurrentPageChanged.add(function() {
-          setTimeout(function() {
-            updateParentHeight();
-            try {
-              window.parent.postMessage({ type: 'focusTrap' }, '*');
-            } catch(e) {}
-          }, 300);
-        });
-
+        // Refocus trap on page change to prevent Wix scrolling
+survey.onCurrentPageChanged.add(function() {
+  try {
+    window.parent.postMessage({ type: 'focusTrap' }, '*');
+  } catch(e) {}
+});
+        
+        // Handle completion
         survey.onComplete.add(function(sender) {
           const data = sender.data;
-          fetch(APPS_SCRIPT_URL, {
-            method: "POST",
-            mode: "no-cors",
-            headers: { "Content-Type": "text/plain" },
-            body: JSON.stringify(data)
-          }).catch(err => console.error("Error sending to Apps Script", err));
 
+          // POST to Apps Script
+          fetch(APPS_SCRIPT_URL, {
+  method: "POST",
+  mode: "no-cors",
+  headers: {
+    "Content-Type": "text/plain"
+  },
+  body: JSON.stringify(data)
+}).catch(err => {
+  console.error("Error sending to Apps Script", err);
+});
+
+          // Show thank-you message
           const thankyou = document.getElementById("thankyouContainer");
           thankyou.style.display = "block";
           thankyou.innerHTML = `
@@ -78,17 +96,21 @@
               to the email address you provided.
             </p>
           `;
-          setTimeout(updateParentHeight, 300);
         });
 
-        const root = document.getElementById("surveyContainer");
-        const surveyElement = document.createElement("div");
-        root.appendChild(surveyElement);
-        Survey.StylesManager.applyTheme("defaultV2");
-        survey.render(surveyElement);
-        setTimeout(updateParentHeight, 500);
+        // Render the survey (correct Knockout UI method)
+const root = document.getElementById("surveyContainer");
+const surveyElement = document.createElement("div");
+root.appendChild(surveyElement);
+
+Survey.StylesManager.applyTheme("defaultV2");
+survey.render(surveyElement);
+
       })
-      .catch(err => console.error("Error loading survey JSON", err));
+      .catch(err => {
+        console.error("Error loading survey JSON", err);
+      });
+    
   </script>
   <script>
     if (window.self !== window.top) {
