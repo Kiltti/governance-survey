@@ -71,7 +71,7 @@
         window.addEventListener("load", notifyParentHeight);
         survey.onCurrentPageChanged.add(function(sender, options) {
   notifyParentHeight();
-  window.parent.postMessage({ type: "scrollToTop" }, "*");
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
         survey.onComplete.add(notifyParentHeight);
         setInterval(notifyParentHeight, 1000);
