@@ -63,15 +63,12 @@
       .then(json => {
         const survey = new Survey.Model(json);
 
-        // Auto-resize for Wix embed
-        function notifyParentHeight() {
-          const height = document.body.scrollHeight;
-          window.parent.postMessage({ type: "setHeight", height: height }, "*");
-        }
-        window.addEventListener("load", notifyParentHeight);
-        survey.onCurrentPageChanged.add(notifyParentHeight);
-        survey.onComplete.add(notifyParentHeight);
-        setInterval(notifyParentHeight, 1000);
+        // Refocus trap on page change to prevent Wix scrolling
+survey.onCurrentPageChanged.add(function() {
+  try {
+    window.parent.postMessage({ type: 'focusTrap' }, '*');
+  } catch(e) {}
+});
         
         // Handle completion
         survey.onComplete.add(function(sender) {
