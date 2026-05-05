@@ -63,18 +63,10 @@
       .then(json => {
         const survey = new Survey.Model(json);
 
-        // Auto-resize for Wix embed
-        function notifyParentHeight() {
-          const height = document.body.scrollHeight;
-          window.parent.postMessage({ type: "setHeight", height: height }, "*");
-        }
-        window.addEventListener("load", notifyParentHeight);
+       // Scroll to top on page change
         survey.onCurrentPageChanged.add(function(sender, options) {
-  notifyParentHeight();
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
-        survey.onComplete.add(notifyParentHeight);
-        setInterval(notifyParentHeight, 1000);
+          window.scrollTo({ top: 0, behavior: "instant" });
+        });
         
         // Handle completion
         survey.onComplete.add(function(sender) {
