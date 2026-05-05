@@ -69,7 +69,10 @@
           window.parent.postMessage({ type: "setHeight", height: height }, "*");
         }
         window.addEventListener("load", notifyParentHeight);
-        survey.onCurrentPageChanged.add(notifyParentHeight);
+        survey.onCurrentPageChanged.add(function(sender, options) {
+  notifyParentHeight();
+  window.parent.postMessage({ type: "scrollToTop" }, "*");
+});
         survey.onComplete.add(notifyParentHeight);
         setInterval(notifyParentHeight, 1000);
         
