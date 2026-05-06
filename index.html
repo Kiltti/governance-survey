@@ -64,6 +64,12 @@
         const survey = new Survey.Model(json);
 
         // Refocus trap on page change to prevent Wix scrolling
+survey.onCurrentPageChanging.add(function() {
+  try {
+    window.parent.postMessage({ type: 'focusTrap' }, '*');
+  } catch(e) {}
+});
+
 survey.onCurrentPageChanged.add(function() {
   try {
     window.parent.postMessage({ type: 'focusTrap' }, '*');
