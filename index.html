@@ -66,6 +66,7 @@
         // Refocus trap on page change to prevent Wix scrolling
 survey.onCurrentPageChanging.add(function() {
   try {
+    document.activeElement.blur();
     window.parent.postMessage({ type: 'focusTrap' }, '*');
   } catch(e) {}
 });
